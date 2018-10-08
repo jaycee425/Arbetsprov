@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="./helpers.js"></script>
+    <script src="./functions.js"></script>
+    <title>SEARCQ</title>
+  </head>
+  <body onload="init();">
+    <div class="wrapper">
+      <header class="logo">
+        <img src="./assets/logo.svg" class="logo-img"/>
+      </header>
+
+      <main class="container">
+        <section class="searchBar">
+          <form onsubmit="return false;">
+            <input name="searchUsers" onkeyup="searchUser()" class="search-form" placeholder="Select User" autocomplete="off"/>
+            <ul class="results"></ul>
+          </form>
+          <img src="./assets/pacman-loading.svg" class="loading-img"/>
+        </section>
+        <section class="saved-users">
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

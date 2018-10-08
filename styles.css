@@ -1,0 +1,205 @@
+@import "https://necolas.github.io/normalize.css/7.0.0/normalize.css";
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  /*not support gradient browsers*/
+  background: #002053;
+  /*Safari*/
+  background: -webkit-linear-gradient(#002053, #2A478C);
+  /*Opera*/
+  background: -o-linear-gradient(#002053, #2A478C);
+  /*Firefox*/
+  background: -moz-linear-gradient(#002053, #2A478C);
+  /*Others*/
+  background: linear-gradient(#002053, #2A478C);
+  color: white;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 10 auto;
+}
+
+.logo {
+  text-align: center;
+}
+
+
+.logo-img {
+  width: 15rem;
+}
+
+.container {
+  padding-top: 1rem;
+}
+
+.searchBar {
+  padding: 1rem;
+}
+
+input.search-form {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0.1rem solid #ccc;
+  border-radius: 1rem;
+  font-size: 3rem;
+  color: #FFF;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url(./assets/search.svg);
+  background-position: 0.5rem;
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  padding: 0.1rem 0.2rem 0.1rem 5rem;
+  height:5rem;
+}
+
+.result {
+  font-size: 2rem;
+  background-color: rgba(240, 240, 240, 0.3);
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+li.result:focus {
+  background-color: #fff;
+  color: #335183;
+}
+
+.results {
+padding: 0;
+margin: 0;
+text-align: left;
+max-height: 30rem;
+overflow-y: scroll;
+}
+
+.loading-img {
+  margin-left: auto;
+  margin-right: auto;
+  display:none;
+}
+
+.loading-img.is-visible {
+  display: block;
+}
+
+.selected-element {
+  height:9rem;
+  border-bottom: 0.1rem solid #ccc;
+  line-height: 9rem;
+}
+
+.saved-users {
+  background-color: rgba(240, 240, 240, 0.3);
+}
+
+.segment {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 53%;
+  line-height: 3rem;
+}
+
+.icon {
+  width: 5em;
+  height: 5em;
+  border-radius: 2.5rem;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.user-elements {
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  display:block;
+}
+
+.isselected {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.close {
+  background-color: rgba(180, 0, 0, 0.6);
+  float: right;
+  align-items: center;
+  position: relative;
+  margin-left: 0%;
+}
+
+.delete-icon {
+  background-image: url(./assets/icons/close.svg);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  margin: 3rem;
+  color: #ccc;
+  background-repeat: no-repeat;
+  background-color: #ccc;
+  background-size: cover;
+  display: block;
+  position: relative;
+}
+
+.user-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 100%;
+    margin: 15 auto;
+  }
+
+  .container {
+    padding:3rem;
+  }
+
+  .logo-img {
+    width: 17rem;
+  }
+
+  .icon {
+    margin-left: 1rem;
+  }
+
+  .segment {
+    max-width: 53%;
+    line-height: 3rem;
+  }
+  .user-elements {
+    display: inline;
+    margin-left: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+    .wrapper {
+      width: 100%;
+      margin: 20 auto;
+    }
+  
+    .container {
+      padding:5rem;
+    }
+  
+    .logo-img {
+      width: 20rem;
+    }
+
+    .user-elements {
+      font-size: 3rem;
+      display: inline;
+      margin-left: 2rem;
+    }
+}
